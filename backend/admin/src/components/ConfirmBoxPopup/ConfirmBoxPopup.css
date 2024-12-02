@@ -1,0 +1,79 @@
+.ConfirmBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ConfirmBox-container {
+  place-self: center;
+  width: max(24vw, 550px);
+  color: #808080;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+}
+.ConfirmBox-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.ConfirmBox-title img {
+  width: 16px;
+  cursor: pointer;
+}
+.ConfirmBox-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ConfirmBox-inputs input {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.ConfirmBox-container button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato;
+  font-size: 15px;
+  cursor: pointer;
+}
+.ConfirmBox-Btn-Container .close-btn {
+  padding: 10px;
+  border-radius: 4px;
+  color: tomato;
+  background-color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid tomato;
+}
+
+.ConfirmBox p span {
+  color: tomato;
+  font-weight: 500;
+  cursor: pointer;
+}
+.add-img-upload label img {
+  max-height: 120px;
+}
+.ConfirmBox-Btn-Container {
+  display: flex;
+  justify-content: space-between;
+}
